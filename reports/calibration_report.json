@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-05-25T00:54:07.572589",
+  "dataset": "kaggle-squat (squat_features_augmented.csv)",
+  "total_rows": 47442,
+  "labels": {
+    "0": "correct",
+    "1": "shallow_squat",
+    "2": "forward_lean",
+    "3": "knee_valgus",
+    "4": "heel_lift",
+    "5": "asymmetric"
+  },
+  "angle_convention": "Kaggle uses complementary angle: our_angle = 180 - kaggle_angle",
+  "analysis": {
+    "squatting_frames_filtered": "knee_angle < 140° (after conversion)",
+    "correct_squat_stats": {
+      "mean": 86.5,
+      "median": 77.7,
+      "p5": 43.9,
+      "p95": 136.1,
+      "count": 4748
+    },
+    "current_bottom_range_coverage": "39.8% of correct squatting frames fall in [70°, 115°]",
+    "label_overlap": "All labels have nearly identical knee angle distributions (mean ~86°). Labels distinguish ERROR TYPE, not depth.",
+    "knee_valgus_ratio": {
+      "correct_mean": 0.0948,
+      "valgus_mean": 0.1296,
+      "note": "Different scale from our system (our threshold: 0.85)"
+    }
+  },
+  "conclusions": [
+    "Current thresholds are reasonable for real MediaPipe data",
+    "Kaggle dataset is synthetic with different angle convention",
+    "Dataset useful for understanding feature distributions, not for direct threshold tuning",
+    "Bottom range 70-115° covers ~40% of squatting depth range - appropriate for FSM bottom state",
+    "Knee valgus ratio threshold (0.85) is conservative but safe - prevents false positives"
+  ],
+  "recommendations": [
+    "Keep current thresholds as-is",
+    "For better calibration, collect real MediaPipe recordings with manual labels",
+    "Consider expanding bottom range to 65-120° for more inclusive depth detection"
+  ]
+}

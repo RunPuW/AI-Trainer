@@ -1,0 +1,126 @@
+{
+  "version": "1.0.0",
+  "description": "赛博私教动作判定规则配置。所有角度单位为度(°)，距离单位为像素(px)或比例(ratio)。阈值基于文献基准+单人自测修正。",
+  "calibration_notes": {
+    "source": "文献基准 -> 个人采集 -> 误差修正",
+    "references": [
+      "Science Behind Squatting - Norcal Powerlifting",
+      "A Biomechanical Review of the Squat Exercise - PMC",
+      "FUNCTIONAL MOVEMENT SCREENING - PMC",
+      "FMS 深蹲评分标准"
+    ],
+    "system_bias": "MediaPipe单摄像头与Vicon存在系统性误差，阈值已预留修正空间",
+    "last_calibrated": "2026-05-24",
+    "subject": "self"
+  },
+  "movements": {
+    "squat": {
+      "enabled": true,
+      "states": {
+        "standing": {
+          "description": "站立准备阶段",
+          "knee_angle_min": 160,
+          "knee_angle_max": 180,
+          "hip_angle_min": 160,
+          "duration_min_frames": 3
+        },
+        "descending": {
+          "description": "下蹲下降阶段",
+          "knee_angle_velocity_threshold": -2.0,
+          "hip_drop_threshold": 5
+        },
+        "bottom": {
+          "description": "深蹲底部阶段",
+          "knee_angle_max": 115,
+          "knee_angle_min": 70,
+          "duration_min_frames": 2,
+          "duration_max_frames": 60
+        },
+        "ascending": {
+          "description": "起立上升阶段",
+          "knee_angle_velocity_threshold": 2.0,
+          "hip_rise_threshold": 5
+        }
+      },
+      "error_thresholds": {
+        "trunk_tibia_diff_max": 10,
+        "trunk_tibia_diff_min": -10,
+        "trunk_forward_max": 45,
+        "knee_valgus_ratio": 0.85,
+        "heel_lift_ratio": 0.1,
+        "cooldown_seconds": 3.0,
+        "shallow_squat_angle": 130,
+        "knee_asymmetry_threshold": 15.0,
+        "knee_deviation_threshold": 0.05
+      },
+      "scoring": {
+        "depth_weight": 0.4,
+        "trunk_tibia_weight": 0.3,
+        "knee_alignment_weight": 0.2,
+        "smoothness_weight": 0.1
+      }
+    }
+  },
+  "filter": {
+    "ema_alpha": 0.3,
+    "min_confidence": 0.5,
+    "key_points_required": [
+      "LEFT_SHOULDER",
+      "RIGHT_SHOULDER",
+      "LEFT_HIP",
+      "RIGHT_HIP",
+      "LEFT_KNEE",
+      "RIGHT_KNEE",
+      "LEFT_ANKLE",
+      "RIGHT_ANKLE",
+      "LEFT_HEEL",
+      "RIGHT_HEEL",
+      "LEFT_FOOT_INDEX",
+      "RIGHT_FOOT_INDEX"
+    ]
+  },
+  "view_classifier": {
+    "front_shoulder_ratio": 0.35,
+    "front_hip_ratio": 0.25,
+    "side_shoulder_ratio": 0.25,
+    "side_hip_ratio": 0.18
+  },
+  "camera_views": {
+    "front": {
+      "enabled_metrics": [
+        "knee_valgus", "knee_asymmetry", "heel_lift", "insufficient_depth"
+      ],
+      "disabled_metrics": [
+        "trunk_forward_lean", "trunk_tibia_diff", "hip_dominant", "knee_dominant"
+      ]
+    },
+    "side": {
+      "enabled_metrics": [
+        "trunk_forward_lean", "trunk_tibia_diff", "hip_dominant",
+        "knee_dominant", "heel_lift", "insufficient_depth"
+      ],
+      "disabled_metrics": [
+        "knee_valgus", "knee_asymmetry"
+      ]
+    },
+    "oblique": {
+      "enabled_metrics": [
+        "heel_lift", "insufficient_depth"
+      ],
+      "disabled_metrics": [
+        "knee_valgus", "trunk_forward_lean", "knee_asymmetry",
+        "trunk_tibia_diff"
+      ]
+    }
+  },
+  "temporal": {
+    "bottom_window_margin_deg": 10,
+    "min_hold_frames": 5,
+    "min_bottom_ratio": 0.3
+  },
+  "debug": {
+    "print_frame_data": false,
+    "save_session_log": true,
+    "log_dir": "logs"
+  }
+}

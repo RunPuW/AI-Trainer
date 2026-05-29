@@ -1,0 +1,355 @@
+[
+  {
+    "name": "深蹲",
+    "name_en": "Barbell Back Squat",
+    "category": "compound",
+    "muscle_group": "股四头肌",
+    "secondary_muscles": ["臀大肌", "腘绳肌", "核心肌群"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "杠铃深蹲是力量训练之王，主要锻炼下肢肌群。",
+    "instructions": [
+      "将杠铃置于斜方肌上部",
+      "双脚与肩同宽或略宽，脚尖外展15-30度",
+      "屈髋屈膝，臀部向后向下坐",
+      "下蹲至大腿平行地面或更低",
+      "脚跟发力站起，回到起始位置"
+    ],
+    "key_points": [
+      "保持核心收紧",
+      "膝盖对准脚尖方向",
+      "背部保持中立位",
+      "重心在脚掌中后部"
+    ],
+    "common_mistakes": [
+      "膝盖内扣",
+      "脚跟抬起",
+      "躯干过度前倾",
+      "下蹲深度不足"
+    ],
+    "contraindications": ["膝关节严重损伤", "腰椎间盘突出急性期"]
+  },
+  {
+    "name": "硬拉",
+    "name_en": "Conventional Deadlift",
+    "category": "compound",
+    "muscle_group": "背部",
+    "secondary_muscles": ["臀大肌", "腘绳肌", "股四头肌", "斜方肌", "前臂"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "传统硬拉是全身性复合动作，主要锻炼后链肌群。",
+    "instructions": [
+      "双脚与髋同宽，杠铃在脚掌中间",
+      "屈髋屈膝，双手握杠（正握或正反握）",
+      "保持背部平直，胸部挺起",
+      "脚跟发力，伸髋伸膝同时进行",
+      "站直后锁定髋部和膝盖"
+    ],
+    "key_points": [
+      "杠铃贴身上移",
+      "背部全程保持平直",
+      "先伸膝后伸髋",
+      "不要过度后仰"
+    ],
+    "common_mistakes": [
+      "弓背",
+      "杠铃离身体太远",
+      "用手臂拉杠",
+      "颈部过度后仰"
+    ],
+    "contraindications": ["腰椎间盘突出", "严重骨质疏松"]
+  },
+  {
+    "name": "卧推",
+    "name_en": "Barbell Bench Press",
+    "category": "compound",
+    "muscle_group": "胸大肌",
+    "secondary_muscles": ["三角肌前束", "肱三头肌"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "杠铃卧推是上肢推类动作的代表，主要锻炼胸肌。",
+    "instructions": [
+      "仰卧在平板凳上，眼睛在杠铃正下方",
+      "双手握距略宽于肩",
+      "杠铃下放至胸部中下部",
+      "上推至手臂伸直（不锁死肘关节）"
+    ],
+    "key_points": [
+      "肩胛骨后缩下沉",
+      "双脚踩实地面",
+      "保持臀部不离凳",
+      "杠铃轨迹略呈弧线"
+    ],
+    "common_mistakes": [
+      "臀部抬起",
+      "杠铃弹胸",
+      "手腕过度后翻",
+      "肘部过度外展"
+    ],
+    "contraindications": ["肩关节损伤", "胸大肌撕裂"]
+  },
+  {
+    "name": "引体向上",
+    "name_en": "Pull-up",
+    "category": "compound",
+    "muscle_group": "背阔肌",
+    "secondary_muscles": ["肱二头肌", "菱形肌", "斜方肌"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "引体向上是上肢拉类动作的经典，主要锻炼背部宽度。",
+    "instructions": [
+      "双手正握杠，握距略宽于肩",
+      "从悬挂位置开始",
+      "背部发力，将身体拉起至下巴过杠",
+      "控制下放回到起始位置"
+    ],
+    "key_points": [
+      "肩胛骨先下沉后收",
+      "避免借力摆动",
+      "全程控制速度",
+      "拉起时挺胸"
+    ],
+    "common_mistakes": [
+      "借力摆动",
+      "没有完全伸直手臂",
+      "耸肩",
+      "速度过快"
+    ],
+    "contraindications": ["肩袖损伤", "肘关节损伤"]
+  },
+  {
+    "name": "哑铃弯举",
+    "name_en": "Dumbbell Bicep Curl",
+    "category": "isolation",
+    "muscle_group": "肱二头肌",
+    "secondary_muscles": ["肱肌", "前臂"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "哑铃弯举是孤立训练肱二头肌的经典动作。",
+    "instructions": [
+      "站立，双手各持一只哑铃",
+      "手臂自然下垂，掌心向前",
+      "保持上臂不动，弯举哑铃至肩部",
+      "控制下放回到起始位置"
+    ],
+    "key_points": [
+      "上臂保持固定",
+      "避免借力摆动身体",
+      "顶峰收缩1-2秒",
+      "控制离心阶段"
+    ],
+    "common_mistakes": [
+      "身体摆动借力",
+      "上臂移动",
+      "速度过快",
+      "重量过大导致变形"
+    ],
+    "contraindications": ["肘关节肌腱炎"]
+  },
+  {
+    "name": "平板支撑",
+    "name_en": "Plank",
+    "category": "isolation",
+    "muscle_group": "核心肌群",
+    "secondary_muscles": ["腹直肌", "腹斜肌", "竖脊肌"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "平板支撑是核心稳定性训练的基础动作。",
+    "instructions": [
+      "俯卧，双肘撑地，与肩同宽",
+      "脚尖着地，身体呈一条直线",
+      "保持呼吸，维持姿势"
+    ],
+    "key_points": [
+      "头部到脚跟保持一条直线",
+      "臀部不要塌陷或撅起",
+      "保持正常呼吸",
+      "核心持续收紧"
+    ],
+    "common_mistakes": [
+      "臀部塌陷",
+      "撅臀",
+      "憋气",
+      "头部过度后仰"
+    ],
+    "contraindications": ["腰椎间盘突出急性期", "严重骨质疏松"]
+  },
+  {
+    "name": "保加利亚分腿蹲",
+    "name_en": "Bulgarian Split Squat",
+    "category": "compound",
+    "muscle_group": "股四头肌",
+    "secondary_muscles": ["臀大肌", "腘绳肌"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "description": "保加利亚分腿蹲是单腿训练的优秀动作，可纠正左右不平衡。",
+    "instructions": [
+      "一脚在前，后脚搭在凳子上",
+      "双手持哑铃或不负重",
+      "前腿屈膝下蹲至大腿平行地面",
+      "前脚发力站起"
+    ],
+    "key_points": [
+      "前膝对准脚尖",
+      "躯干保持直立或微前倾",
+      "后脚仅用于平衡",
+      "重心在前脚"
+    ],
+    "common_mistakes": [
+      "前膝内扣",
+      "身体过度前倾",
+      "后脚承重过多",
+      "下蹲深度不足"
+    ],
+    "contraindications": ["膝关节严重损伤", "平衡能力严重不足"]
+  },
+  {
+    "name": "肩推",
+    "name_en": "Overhead Press",
+    "category": "compound",
+    "muscle_group": "三角肌",
+    "secondary_muscles": ["肱三头肌", "斜方肌", "核心肌群"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "站姿杠铃肩推是发展肩部力量和稳定性的经典动作。",
+    "instructions": [
+      "双脚与肩同宽，杠铃置于锁骨位置",
+      "握距略宽于肩",
+      "核心收紧，将杠铃推过头顶",
+      "手臂伸直后回到起始位置"
+    ],
+    "key_points": [
+      "推起时头部微后仰让路",
+      "杠铃走直线",
+      "锁定时杠铃在头顶正上方",
+      "避免过度后仰借力"
+    ],
+    "common_mistakes": [
+      "过度后仰",
+      "杠铃轨迹弯曲",
+      "核心松懈",
+      "肘部位置过低"
+    ],
+    "contraindications": ["肩关节损伤", "腰椎问题"]
+  },
+  {
+    "name": "俯身划船",
+    "name_en": "Barbell Bent-Over Row",
+    "category": "compound",
+    "muscle_group": "背部",
+    "secondary_muscles": ["肱二头肌", "菱形肌", "斜方肌"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "俯身划船是发展背部厚度的核心动作。",
+    "instructions": [
+      "双脚与肩同宽，膝盖微屈",
+      "上身前倾约45度",
+      "双手正握杠铃",
+      "将杠铃拉向下腹部",
+      "控制下放"
+    ],
+    "key_points": [
+      "背部保持平直",
+      "肩胛骨后收",
+      "杠铃贴近身体",
+      "避免借力站起"
+    ],
+    "common_mistakes": [
+      "弓背",
+      "身体晃动借力",
+      "拉的位置过高",
+      "下放速度过快"
+    ],
+    "contraindications": ["腰椎间盘突出", "严重骨质疏松"]
+  },
+  {
+    "name": "臀桥",
+    "name_en": "Hip Thrust",
+    "category": "isolation",
+    "muscle_group": "臀大肌",
+    "secondary_muscles": ["腘绳肌", "核心肌群"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "臀桥是孤立训练臀大肌最有效的动作之一。",
+    "instructions": [
+      "上背靠在凳子边缘",
+      "杠铃置于髋部（需加垫）",
+      "双脚踩地，与肩同宽",
+      "臀部发力向上推起",
+      "顶峰收缩后控制下放"
+    ],
+    "key_points": [
+      "下巴内收，不要过度后仰",
+      "小腿垂直地面",
+      "顶峰时大腿与躯干成一条线",
+      "不要过度伸展腰椎"
+    ],
+    "common_mistakes": [
+      "过度后仰",
+      "腰部代偿",
+      "脚的位置太远或太近",
+      "下放过快"
+    ],
+    "contraindications": ["腰椎问题", "髋关节置换术后"]
+  },
+  {
+    "name": "波比跳",
+    "name_en": "Burpee",
+    "category": "cardio",
+    "muscle_group": "全身",
+    "secondary_muscles": ["心肺功能"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "波比跳是全身性高强度间歇训练动作。",
+    "instructions": [
+      "站立开始",
+      "蹲下双手撑地",
+      "双脚向后跳成俯卧撑位置",
+      "做一个俯卧撑",
+      "双脚跳回蹲位",
+      "起身跳起"
+    ],
+    "key_points": [
+      "保持核心收紧",
+      "俯卧撑位置身体呈直线",
+      "跳起时充分伸展",
+      "根据体能调整速度"
+    ],
+    "common_mistakes": [
+      "俯卧撑位置塌腰",
+      "跳起高度不足",
+      "呼吸紊乱",
+      "速度过快导致变形"
+    ],
+    "contraindications": ["心血管疾病", "严重肥胖", "关节问题"]
+  },
+  {
+    "name": "侧平举",
+    "name_en": "Lateral Raise",
+    "category": "isolation",
+    "muscle_group": "三角肌",
+    "secondary_muscles": ["斜方肌"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "侧平举是孤立训练三角肌中束的动作，发展肩部宽度。",
+    "instructions": [
+      "站立，双手各持哑铃",
+      "手臂微屈",
+      "向两侧举起哑铃至肩平",
+      "控制下放"
+    ],
+    "key_points": [
+      "小指略高于拇指（倒水姿势）",
+      "肘部保持微屈",
+      "不要耸肩",
+      "使用轻重量，避免借力"
+    ],
+    "common_mistakes": [
+      "重量过大导致借力",
+      "耸肩",
+      "手臂举得过高",
+      "身体晃动"
+    ],
+    "contraindications": ["肩袖损伤", "肩峰撞击综合征"]
+  }
+]

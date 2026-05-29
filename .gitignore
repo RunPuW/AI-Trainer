@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# 环境配置
+.env
+.env.local
+.runtime/
+.claude/
+.chrome-*/
+_remaining_chars.json
+
+# 数据库
+*.db
+*.db-*
+*.sqlite
+
+# 向量数据库
+data/chroma_db/
+data/chroma_test*/
+
+# 日志
+logs/
+*.log
+mimo_output.txt
+
+# MediaPipe模型
+*.task
+
+# 数据集（大文件）
+data/datasets/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+.npm
+*.tgz
+
+# 本地测试/截图产物
+*.png
+*.jpg
+*.jpeg
+*.bak
+
+# 系统文件
+.DS_Store
+Thumbs.db

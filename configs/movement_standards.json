@@ -1,0 +1,95 @@
+{
+  "version": "2026-05-28",
+  "movements": {
+    "squat": {
+      "name": "深蹲",
+      "description": "从稳定站立开始，屈髋屈膝下蹲至足够深度，再主动伸髋伸膝回到站立。",
+      "preparation": {
+        "seconds": 5,
+        "require_initial_standing": true,
+        "instruction": "站稳入镜，倒计时结束后再开始下蹲。"
+      },
+      "phases": {
+        "standing": {
+          "knee_angle_min": 160,
+          "stable_frames": 3,
+          "label": "站立准备"
+        },
+        "descending": {
+          "knee_velocity_max": -2.0,
+          "label": "下蹲"
+        },
+        "bottom": {
+          "knee_angle_min": 70,
+          "knee_angle_max": 115,
+          "stable_frames": 2,
+          "label": "底部"
+        },
+        "ascending": {
+          "knee_velocity_min": 2.0,
+          "label": "起立"
+        },
+        "complete": {
+          "knee_angle_min": 160,
+          "stable_frames": 3,
+          "min_rep_duration_ms": 700,
+          "label": "完成"
+        }
+      },
+      "quality": {
+        "depth": {
+          "ideal_knee_angle": 105,
+          "excellent_min": 85,
+          "excellent_max": 115,
+          "shallow_angle": 130,
+          "too_deep_angle": 60
+        },
+        "alignment": {
+          "trunk_tibia_diff_abs_max": 10,
+          "trunk_forward_abs_max": 45,
+          "knee_valgus_ratio_min": 0.85,
+          "knee_deviation_min": -0.05,
+          "knee_asymmetry_abs_max": 15,
+          "heel_lift_ratio_max": 0.1
+        }
+      },
+      "issue_catalog": {
+        "insufficient_depth": {
+          "label": "深度不足",
+          "description": "底部膝角偏大，说明下蹲深度不足。",
+          "cue": "继续屈髋屈膝，目标是大腿接近平行地面。"
+        },
+        "knee_valgus": {
+          "label": "膝盖内扣",
+          "description": "膝盖向身体中线偏移，可能增加膝关节压力。",
+          "cue": "让膝盖跟随脚尖方向，主动向外打开。"
+        },
+        "trunk_forward_lean": {
+          "label": "躯干前倾过多",
+          "description": "躯干前倾超过安全参考范围。",
+          "cue": "胸口上提，核心收紧，髋部向后坐。"
+        },
+        "hip_dominant": {
+          "label": "髋主导过多",
+          "description": "躯干和小腿角度差偏大，动作更像折髋。",
+          "cue": "保持胸口稳定，让膝盖和髋部同步弯曲。"
+        },
+        "knee_dominant": {
+          "label": "膝主导过多",
+          "description": "膝盖前移过多，髋部参与不足。",
+          "cue": "髋部向后坐一点，重心放在全脚掌。"
+        },
+        "heel_lift": {
+          "label": "脚跟抬起",
+          "description": "脚跟离地会降低稳定性。",
+          "cue": "脚跟踩稳，重心保持在脚掌中后部。"
+        },
+        "knee_asymmetry": {
+          "label": "左右膝不对称",
+          "description": "左右膝角差过大，可能说明受力不均。",
+          "cue": "两侧同时下蹲和起立，避免向一侧偏移。"
+        }
+      }
+    }
+  }
+}
